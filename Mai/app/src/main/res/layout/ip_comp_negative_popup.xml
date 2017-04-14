@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/twentydp"
+    android:background="@drawable/dialog_corners"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentydp"
+        android:text="@string/child_take_more_time"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentydp"
+        android:text="@string/simplified_version"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twentydp"
+        android:layout_marginTop="@dimen/fiftydp"
+        android:id="@+id/beginTV"
+        android:text="BEGIN"
+        android:textColor="@color/begin"
+        android:textSize="@dimen/twentysp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

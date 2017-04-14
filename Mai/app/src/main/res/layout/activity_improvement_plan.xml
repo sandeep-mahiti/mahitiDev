@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_improvement_plan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parentof.mai.views.activity.improvementplan.ImprovementPlanActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ip_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ToolbarStyle"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ip_toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/mainRL_below_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/bannerImg_below_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/kid_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="0.1">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:weightSum="1"
+                    android:background="@drawable/improvement_plan_blok"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/learn_plan_level_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.15"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/tendp"
+                        android:text="learning plan 1"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/fourteensp" />
+
+                    <TextView
+                        android:id="@+id/DP_Name_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center"
+                        android:text="exam confidence"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eighteensp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_gravity="center"
+                        android:paddingLeft="@dimen/fivedp"
+                        android:paddingRight="@dimen/fivedp"
+                        android:weightSum="1"
+                        android:gravity="center"
+
+                       >
+
+                        <ImageView
+                            android:id="@+id/skill_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/fivedp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/verbal_communication_selected" />
+
+                        <TextView
+                            android:id="@+id/skill_name_TV"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/fivedp"
+                            android:maxLines="2"
+
+                            android:text="Understanding cause and Effect of somthing"
+                            android:textAllCaps="true"
+                            android:textColor="@color/days_pbar_startcolor"
+                            android:textSize="@dimen/fourteensp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/level_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:paddingBottom="@dimen/fivedp"
+                        android:layout_below="@+id/skill_name_TV"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:gravity="center"
+                        android:text="level"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="0.1">
+
+                </View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/progressTVLLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="225dp"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_test"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:drawable="@drawable/statistics_progress_bg"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:max="60"
+                    android:progress="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/taskLineLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressTVLLayout"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/twentydp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text=" Task"
+                    android:textColor="@color/grey" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.75"
+                    android:background="@color/light_grey" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/playImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/taskLineLayout"
+                android:layout_marginRight="@dimen/twentydp"
+                android:elevation="@dimen/eightdp"
+                android:src="@drawable/playbigicon100" />
+
+            <LinearLayout
+                android:id="@+id/sayHelloLLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/taskLineLayout"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginRight="@dimen/fivedp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:background="@drawable/sayhello100"
+                android:elevation="@dimen/fourdp"
+                android:orientation="vertical"
+                android:padding="@dimen/twentydp">
+
+                <TextView
+                    android:id="@+id/task_hello_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twentydp"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:text="Say Hello !"
+                    android:textColor="@color/days_pbar_startcolor"
+                    android:textSize="@dimen/twentysp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/practice_string_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twentydp"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:text="Practice the following activity at home"
+                    android:textColor="#a7b5c0"
+                    android:textSize="@dimen/fourteensp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteendp"
+                    android:layout_marginLeft="@dimen/twentydp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/circle_img1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/roundtext100" />
+
+                        <TextView
+                            android:id="@+id/circle_string1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.90"
+                            android:text="Tell the child-'Let's play a gameof meeting people'."
+                            android:textColor="#a7b5c0"
+                            android:textSize="@dimen/twelvesp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/textline100" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/textline100" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/textline100" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/textline100" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/circle_img2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/roundtext100" />
+
+                        <TextView
+                            android:id="@+id/circle_string2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.90"
+                            android:text="When we meet another person we say 'Hello'."
+                            android:textColor="#a7b5c0"
+                            android:textSize="@dimen/twelvesp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/circle_img3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/roundtext100" />
+
+                        <TextView
+                            android:id="@+id/circle_string3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.90"
+                            android:text="Call out your Child's name and say 'Hello'."
+                            android:textColor="#a7b5c0"
+                            android:textSize="@dimen/twelvesp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/textline100" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/textline100" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/textline100" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/textline100" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/circle_img4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.10"
+                            android:paddingLeft="@dimen/tendp"
+                            android:src="@drawable/roundtext100" />
+
+                        <TextView
+                            android:id="@+id/circle_string4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.90"
+                            android:text="Ask your child to say 'Hello'."
+                            android:textColor="#a7b5c0"
+                            android:textSize="@dimen/twelvesp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/doActivity_repeatLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sayHelloLLayout"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginRight="@dimen/fivedp"
+                android:background="@drawable/grey_corners"
+                android:elevation="@dimen/fivedp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/tendp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/do_activity_string_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Do this activity for"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/do_activity_noOfDays_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="5 "
+                            android:textColor="#2cbaef"
+                            android:textSize="@dimen/twentysp" />
+
+                        <TextView
+                            android:id="@+id/do_activity_daysString_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|bottom"
+                            android:text=" days "
+                            android:textColor="#2cbaef" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="@color/light_grey" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.45"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/repeat_string_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Repetitions per day "
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/repeat_noOfTimes_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="05 "
+                            android:textColor="#2cbaef"
+                            android:textSize="@dimen/twentysp" />
+
+                        <TextView
+                            android:id="@+id/repeat_timesString_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|bottom"
+                            android:text=" times"
+                            android:textColor="#2cbaef" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dodontLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doActivity_repeatLayout"
+                android:layout_marginBottom="@dimen/thirtydp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pointsToKeep_String_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:gravity="center"
+                    android:text="Points to keep in mind while you do this activity"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/sixteensp"
+                    android:textStyle="bold" />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginTop="@dimen/twentydp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/twentydp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/doTextTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/twentydp"
+                                android:layout_weight="0.8"
+                                android:text="Do's"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/twentysp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:id="@+id/do_downArrow"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.2"
+                                android:src="@drawable/blackdownarrow100"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/do_upArrow"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.2"
+                                android:src="@drawable/blacktoparrow100" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/do_Strings_Llayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/do_TV1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:layout_weight="0.9"
+                                android:text="- Be with your child while doing this activity\n\n- Encourage every small effort of your child\n\n-  Believe and instil hope in self and in child\n\n- Practice is the key !"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/fourteensp" />
+
+
+                            <TextView
+                                android:id="@+id/do_TV2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:layout_marginTop="@dimen/fivedp"
+                                android:layout_weight="0.9"
+                                android:text="\tBe involved and make in fun filled and realistic to the child."
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/fourteensp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginTop="@dimen/twentydp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/twentydp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/dontTextTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/twentydp"
+                                android:layout_weight="0.8"
+                                android:text="Dont's"
+                                android:textColor="#bd422e"
+                                android:textSize="@dimen/twentysp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:id="@+id/dont_upArrow"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.2"
+                                android:src="@drawable/blacktoparrow100"
+                                 />
+
+                            <ImageView
+                                android:id="@+id/dont_downArrow"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.2"
+                                android:visibility="gone"
+                                android:src="@drawable/blackdownarrow100" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dont_Strings_Llayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/dont_TV1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:layout_weight="0.9"
+                                android:text="- Be with your child while doing this activity\n\n- Encourage every small effort of your child\n\n-  Believe and instil hope in self and in child\n\n- Practice is the key !"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/fourteensp" />
+
+
+                            <TextView
+                                android:id="@+id/dont_TV2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:layout_marginTop="@dimen/fivedp"
+                                android:layout_weight="0.9"
+                                android:text="\tBe involved and make in fun filled and realistic to the child."
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/fourteensp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/daysWeeksRv">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                   <!-- <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fivedp"
+                        android:layout_weight="0.13"
+                        android:background="@drawable/dayselected100"
+                        android:gravity="center"
+                        android:text="Day 1"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tensp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fivedp"
+                        android:layout_weight="0.13"
+                        android:background="@drawable/daynormal100"
+                        android:gravity="center"
+                        android:text="Day 2"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/tensp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fivedp"
+                        android:layout_weight="0.13"
+                        android:background="@drawable/daynormal100"
+                        android:gravity="center"
+                        android:text="Day 3"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/tensp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fivedp"
+                        android:layout_weight="0.13"
+                        android:background="@drawable/daynormal100"
+                        android:gravity="center"
+                        android:text="Day 4"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/tensp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fivedp"
+                        android:layout_weight="0.13"
+                        android:background="@drawable/daynormal100"
+                        android:gravity="center"
+                        android:text="Day 5"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/tensp" />-->
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/beginBtnTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirtydp"
+                    android:layout_marginRight="@dimen/thirtydp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:background="@drawable/chatbtnselected"
+                    android:gravity="center"
+                    android:padding="@dimen/tendp"
+                    android:text="Begin"
+                    android:clickable="true"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteensp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/myChildCanDoTVBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:gravity="center"
+                    android:padding="@dimen/fivedp"
+                    android:text="@string/myChildcando"
+                    android:textColor="#7eb4f5"
+                    android:textSize="@dimen/sixteensp"
+                    android:clickable="true"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

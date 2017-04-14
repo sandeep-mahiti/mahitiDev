@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/fivedp"
+    android:layout_marginLeft="@dimen/fivedp"
+    android:layout_marginBottom="@dimen/tendp"
+    android:padding="@dimen/tendp" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <!--<ImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageId"
+        android:src="@mipmap/ic_launcher"/>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/fivedp"
+        >
+
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/dpwidth"
+        android:layout_height="@dimen/dpheight"
+        android:id="@+id/imageLayout"
+        android:backgroundTintMode="src_over"
+        android:background="@color/black">
+
+        <ProgressBar
+            android:id="@+id/movie_item_spinner"
+            android:layout_width="@dimen/fiftydp"
+            android:layout_height="@dimen/fiftydp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:progressDrawable="@drawable/circular_progressbar"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/fivedp"
+            android:layout_marginStart="@dimen/fivedp"
+            android:layout_marginLeft="@dimen/tendp"
+            android:id="@+id/progressLayout">
+
+            <ProgressBar
+                android:id="@+id/progressBar_DB"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginRight="@dimen/fivedp"
+                android:max="100"
+                android:progress="10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/fivedp"
+                android:text="20%"
+                android:id="@+id/percentTV"
+                android:textColor="@color/green"
+                android:textSize="@dimen/twelvesp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_below="@+id/imageLayout"
+        android:paddingTop="@dimen/fivedp"
+        android:text="Anger Management"
+        android:textStyle="bold"
+        android:textSize="@dimen/sixteensp"
+        android:textColor="@color/black"/>
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub_title"
+        android:layout_below="@+id/title"
+        android:text="Lorem Ipusm"
+        />-->
+
+    </RelativeLayout>
+</LinearLayout>

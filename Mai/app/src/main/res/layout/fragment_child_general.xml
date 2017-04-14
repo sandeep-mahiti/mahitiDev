@@ -1,0 +1,400 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical"
+    tools:context="com.parentof.mai.views.activity.userProfile.UserGeneralFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/child_general_saveBtn">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/tendp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/person_deatils_normal" />
+
+                    <EditText
+                        android:id="@+id/child_gen_fName"
+                        style="@style/ParentEditText"
+                        android:layout_weight=".4"
+                        android:hint="@string/first_name_hint"
+                        android:inputType="textCapSentences" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/tendp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteendp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/person_deatils_normal" />
+
+                    <EditText
+                        android:id="@+id/child_gen_lName"
+                        style="@style/ParentEditText"
+                        android:layout_weight=".4"
+                        android:hint="@string/last_name_hint"
+                        android:inputType="textCapSentences" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/tendp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteendp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/person_deatils_normal" />
+
+                    <EditText
+                        android:id="@+id/child_gen_nName"
+                        style="@style/ParentEditText"
+                        android:layout_weight=".4"
+                        android:hint="@string/nick_name_hin"
+                        android:inputType="textCapSentences" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/tendp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteendp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/dateofbirth_normal" />
+
+                    <EditText
+                        android:id="@+id/child_gen_dob"
+                        style="@style/ParentEditText"
+                        android:layout_weight=".4"
+                        android:editable="false"
+                        android:hint="@string/dob" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/tendp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/gender"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioGroup
+                    android:id="@+id/child_gen_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/child_gen_gender_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:tag="1"
+                        android:text="@string/male"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioButton
+                        android:id="@+id/child_gen_gender_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:tag="0"
+                        android:text="@string/female"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimaryDark" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/ll_blood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/fifteendp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/bloodgroup_normal" />
+
+                    <EditText
+                        android:id="@+id/child_gen_bgroup"
+                        style="@style/ParentEditText"
+                        android:layout_weight=".4"
+                        android:editable="false"
+                        android:hint="@string/blood_group" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/downarrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/twentydp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/fifteendp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/school_normal" />
+
+                    <EditText
+                        android:id="@+id/child_gen_school"
+                        style="@style/ParentEditText"
+                        android:layout_weight=".4"
+                        android:hint="@string/school"
+                        android:inputType="textCapSentences" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/tendp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:id="@+id/ll_child_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/fifteendp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/class_normal" />
+
+                    <EditText
+                        android:id="@+id/child_gen_class"
+                        style="@style/ParentEditText"
+                        android:layout_weight=".4"
+                        android:editable="false"
+                        android:hint="@string/class_hint"
+                        android:maxLength="20" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/downarrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/tendp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteendp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/class_normal" />
+
+                    <EditText
+                        android:id="@+id/child_gen_section"
+                        style="@style/ParentEditText"
+                        android:layout_weight=".4"
+                        android:hint="@string/section"
+                        android:inputType="textCapSentences"
+                        android:maxLength="20" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/tendp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteendp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:src="@drawable/roolnumber_normal" />
+
+                    <EditText
+                        android:id="@+id/child_gen_rollNum"
+                        style="@style/ParentEditText"
+                        android:layout_weight=".4"
+                        android:hint="@string/roll_number_hint"
+                        android:maxLength="20" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:background="@color/colorPrimaryDark" />
+
+
+                <!-- <RelativeLayout
+                     android:id="@+id/rl_save"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:layout_alignParentBottom="true">-->
+            </LinearLayout>
+
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/child_general_saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/tendp"
+        android:background="@color/yellow"
+        android:text="@string/save"
+        android:textColor="@color/white" />
+</RelativeLayout>

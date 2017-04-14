@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/tendp"
+    android:background="@drawable/dialog_corners"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirtydp"
+        android:id="@+id/qQuestionTV"
+        android:text="How do ypu like to see this vision in the hanl sadlnas dalnsdlknals kdnalns dlansdl aknsdln asl d na lsndlansdlnalsndlaknsdn"
+        android:layout_marginLeft="@dimen/twentyFivedp"
+        android:layout_marginRight="@dimen/twentyFivedp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twentysp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:id="@+id/alwaysTV"
+        android:text="@string/always"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/begin"
+        android:textSize="@dimen/twentysp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:id="@+id/oftenTV"
+        android:text="VERY OFTEN"
+        android:textColor="@color/begin"
+        android:textSize="@dimen/twentysp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:text="SOMETIMES RARELY"
+        android:id="@+id/rarelyTV"
+        android:textColor="@color/begin"
+        android:textSize="@dimen/twentysp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:text="NOT AT ALL"
+        android:id="@+id/notAtAllTV"
+        android:textColor="@color/begin"
+        android:textSize="@dimen/twentysp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:text="@string/back"
+        android:id="@+id/backTV"
+        android:textColor="@color/light_red"
+        android:textSize="@dimen/twentysp"
+        android:textStyle="bold" />
+
+</LinearLayout>

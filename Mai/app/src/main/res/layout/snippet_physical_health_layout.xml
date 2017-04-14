@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_physical_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/icterus"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_icterus"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/cyanosis"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_cyanosis"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/yes_no_array" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/clubbing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_clubbing"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/oedema"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_oedema"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/sacrat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_sacrat"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/peri_orbital"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_peri"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/lymphadenopathy"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_lymphad"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/cervical_anterior"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_cerAnterior"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/cervical_posterior"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_cerPosterior"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/axillary"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_axillary"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/occipital"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_occipital"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/fpitrochlear"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+                    <Spinner
+                        android:id="@+id/sp_fpitrochlear"
+                        android:layout_width="@dimen/hunderd"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:entries="@array/yes_no_array" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_physical_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/icterus"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_icterus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/cyanosis"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_cyanosis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/clubbing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_clubbing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/oedema"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_oedema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/sacrat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_sacrat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/peri_orbital"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_peri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/lymphadenopathy"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_lymphad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/cervical_anterior"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_cerAnterior"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/cervical_posterior"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_cerPosterior"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/axillary"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_axillary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/occipital"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_occipital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twentydp"
+                        android:text="@string/fpitrochlear"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_fpitrochlear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/tendp"
+                        android:text="@string/yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentysp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fivedp"
+                android:orientation="horizontal"
+                android:padding="@dimen/fivedp"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/physical_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/twentydp"
+                    android:paddingTop="@dimen/fivedp"
+                    android:paddingBottom="@dimen/fivedp"
+                    android:paddingRight="@dimen/twentydp"
+                    android:background="@drawable/border_textview"
+                    android:text="@string/save_small"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/eighteensp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:padding="@dimen/fivedp"
+                    android:visibility="gone"
+                    android:text="@string/advanced_analysis"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/eighteensp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_accounts"
+            android:icon="@drawable/accounts_icon"
+            android:title="@string/anct" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/notification_icon"
+            android:title="@string/notifications" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/privacy_policy"
+            android:title="@string/privacy_policy" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="@string/logout" />
+        <item
+            android:id="@+id/nav_freq"
+            android:icon="@drawable/question"
+            android:title="@string/fre_ans_qns" />
+        <item
+            android:id="@+id/nav_abt"
+            android:icon="@drawable/about"
+            android:title="@string/about" />
+    </group>
+
+
+
+</menu>

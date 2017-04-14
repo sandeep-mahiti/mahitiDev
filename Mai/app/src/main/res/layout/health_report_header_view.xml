@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootHead"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/twentydp"
+    android:paddingTop="@dimen/twentydp"
+
+    android:weightSum="3">
+
+    <ImageView
+        android:id="@+id/img_ex_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:src="@drawable/dateofbirth_normal" />
+
+    <TextView
+        android:id="@+id/tv_headerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:hint="BIOMETRIC"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteensp" />
+
+    <ImageView
+        android:id="@+id/ex_row_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        android:src="@drawable/tab_arrow" />
+
+</LinearLayout>

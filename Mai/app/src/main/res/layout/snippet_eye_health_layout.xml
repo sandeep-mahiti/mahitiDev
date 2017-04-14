@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:orientation="horizontal"
+            android:padding="@dimen/tendp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:textSize="@dimen/twentysp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tendp"
+                android:layout_weight="1.1"
+                android:text="@string/left_eye"
+                android:textSize="@dimen/eighteensp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:text="@string/right_eye"
+                android:textSize="@dimen/eighteensp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:paddingLeft="@dimen/tendp"
+                android:textColor="@color/black"
+                android:text="@string/visual_activity"
+                android:textSize="@dimen/twentysp" />
+
+            <EditText
+                android:id="@+id/edt_vis_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginRight="@dimen/tendp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/tendp"
+                android:maxLength="5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp" />
+
+            <EditText
+                android:id="@+id/edt_vis_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:padding="@dimen/tendp"
+                android:textSize="@dimen/eighteensp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:inputType="text"
+                android:paddingLeft="@dimen/tendp"
+                android:text="@string/refraction_index"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <EditText
+                android:id="@+id/edt_ref_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginRight="@dimen/tendp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:padding="@dimen/tendp"
+                android:maxLength="5"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp" />
+
+            <EditText
+                android:id="@+id/edt_ref_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:padding="@dimen/tendp"
+                android:maxLength="5"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:textSize="@dimen/eighteensp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:paddingLeft="@dimen/tendp"
+                android:text="@string/color_vision"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <Spinner
+                android:id="@+id/sp_color_vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:entries="@array/tone_array" />
+            <TextView
+                android:id="@+id/tv_color_vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/eighteensp"
+                />
+
+           <!-- <EditText
+                android:id="@+id/edt_color_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginRight="@dimen/tendp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:inputType="text"
+                android:padding="@dimen/tendp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp" />
+
+            <EditText
+                android:id="@+id/edt_color_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:inputType="text"
+                android:padding="@dimen/tendp"
+                android:textSize="@dimen/eighteensp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:paddingLeft="@dimen/tendp"
+                android:textColor="@color/black"
+                android:text="@string/squint"
+                android:layout_gravity="center"
+                android:textSize="@dimen/twentysp" />
+            <Spinner
+                android:id="@+id/sp_squint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:entries="@array/yes_no_array"
+               />
+            <TextView
+                android:id="@+id/tv_squint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/eighteensp"
+                />
+          <!--  <EditText
+                android:id="@+id/edt_squint_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginRight="@dimen/fivedp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:inputType="text"
+                android:padding="@dimen/tendp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp" />
+
+            <EditText
+                android:id="@+id/edt_squintr_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:inputType="text"
+                android:padding="@dimen/tendp"
+                android:textSize="@dimen/eighteensp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:paddingLeft="@dimen/tendp"
+                android:text="@string/allergy_infection"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="@dimen/twentysp" />
+            <Spinner
+                android:id="@+id/sp_allergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:entries="@array/yes_no_array"
+                />
+            <TextView
+                android:id="@+id/tv_allergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/eighteensp"
+                />
+<!--
+            <EditText
+                android:id="@+id/edt_all_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginRight="@dimen/tendp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:inputType="text"
+                android:padding="@dimen/tendp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp" />
+
+            <EditText
+                android:id="@+id/edt_all_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_weight="1.1"
+                android:background="@drawable/add_age_edittext"
+                android:inputType="text"
+                android:padding="@dimen/tendp"
+                android:textSize="@dimen/eighteensp" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/fivedp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/eye_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/tendp"
+            android:background="@drawable/border_textview"
+            android:gravity="right"
+            android:paddingBottom="@dimen/fivedp"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingRight="@dimen/twentydp"
+            android:paddingTop="@dimen/fivedp"
+            android:text="@string/save_small"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/eighteensp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:padding="@dimen/fivedp"
+            android:text="@string/advanced_analysis"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/eighteensp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

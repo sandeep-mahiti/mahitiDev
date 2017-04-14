@@ -1,0 +1,48 @@
+<resources>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fourtysp">40sp</dimen>
+    <dimen name="fourteensp">14sp</dimen>
+    <dimen name="eighteensp">18sp</dimen>
+    <dimen name="twentysp">20sp</dimen>
+    <dimen name="twosp">2sp</dimen>
+    <dimen name="twelveSp">12sp</dimen>
+    <dimen name="twentyFivesp">25sp</dimen>
+    <dimen name="thirtysp">30sp</dimen>
+    <dimen name="twelvesp">12sp</dimen>
+    <dimen name="tensp">10sp</dimen>
+    <dimen name="eightsp">8sp</dimen>
+    <dimen name="twentytwosp">22sp</dimen>
+    <dimen name="eightensp">18sp</dimen>
+    <dimen name="sixteensp">16sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="twentydp">20dp</dimen>
+    <dimen name="fourtydp">40dp</dimen>
+    <dimen name="fiftydp">50dp</dimen>
+    <dimen name="tendp">10dp</dimen>
+    <dimen name="twodp">2dp</dimen>
+    <dimen name="twentyFivedp">25dp</dimen>
+    <dimen name="fivedp">5dp</dimen>
+    <dimen name="thirtydp">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="thirtyifivedp">35dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <dimen name="hunderd">100dp</dimen>
+    <dimen name="eighty">80dp</dimen>
+    <dimen name="seventy">70dp</dimen>
+    <dimen name="thirteendp">13dp</dimen>
+    <dimen name="eightdp">8dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="twentyfivedp">25dp</dimen>
+    <dimen name="fifteendp">15dp</dimen>
+    <dimen name="fourdp">4dp</dimen>
+    <dimen name="sixty">60dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="threedp">3dp</dimen>
+    <dimen name="sevendp">7dp</dimen>
+    <dimen name="twentytwodp">22dp</dimen>
+    <dimen name="dpwidth">445px</dimen>
+
+</resources>

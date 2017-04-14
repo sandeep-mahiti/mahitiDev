@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/twentydp"
+    android:background="@drawable/dialog_corners"
+    android:gravity="center"
+    android:padding="@dimen/tendp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirtydp"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:layout_marginRight="@dimen/thirtydp"
+        android:text="@string/active_ip"
+        android:id="@+id/alreadyActiveTV"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteensp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginRight="@dimen/twentydp"
+        android:text="@string/like_pause"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteensp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirtydp"
+        android:text="@string/pause_plan"
+        android:id="@+id/pausePlanTV"
+
+        android:textColor="@color/begin"
+        android:textSize="@dimen/eighteensp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:text="@string/do_this_later"
+        android:id="@+id/doThisLaterTV"
+        android:textColor="@color/begin"
+        android:textSize="@dimen/eighteensp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:text="@string/back"
+        android:id="@+id/backTV"
+        android:textColor="@color/light_red"
+        android:textSize="@dimen/eighteensp"
+       />
+
+</LinearLayout>

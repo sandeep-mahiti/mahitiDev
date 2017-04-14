@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.parentof.mai.views.activity.ChildDashboardActivity">
+
+    <include layout="@layout/mai_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_childName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/tendp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/ds_childImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            android:src="@drawable/boy_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ds_childName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mohit"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twentytwosp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:background="@drawable/border_with_white"
+                    android:paddingBottom="@dimen/twodp"
+                    android:paddingLeft="@dimen/twentyFivedp"
+                    android:paddingRight="@dimen/twentyFivedp"
+                    android:paddingTop="@dimen/twodp"
+                    android:text="Edit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteensp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ds_childYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 Years"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteensp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:tabIndicatorColor="@color/white"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/security_qn_color" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

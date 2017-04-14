@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.fragments.childTabs.HealthReportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+           />
+
+        <TextView
+            android:id="@+id/label_no_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twentydp"
+            android:text="No tasks are available, Please activate from discovery"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+        <include layout="@layout/widget_reminder_layout" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twentydp"
+            android:text="NEW DPs"
+            android:id="@+id/newDPTV"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteensp"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginBottom="@dimen/twentydp"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:id="@+id/homeFragRV">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</ScrollView>

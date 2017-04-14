@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parentof.mai.views.fragments.reports_chathistory_fragments.ChildReportsFragment">
+
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/report_scrollView"
+        >-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/reportsBG_lLayout"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tendp"
+            android:background="@drawable/reports_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/tendp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/tendp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/maiinfo_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/twentydp"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginTop="@dimen/tendp"
+                android:gravity="center"
+                android:src="@drawable/kid_image" />
+        </LinearLayout>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reports_listV"
+            android:layout_weight="40">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+ <!--   </ScrollView>-->
+
+</FrameLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:background="@color/very_light_grey"
+            android:orientation="vertical"
+            android:padding="@dimen/tendp">
+
+            <TextView
+                android:id="@+id/bottomLayoutTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginRight="@dimen/fivedp"
+                android:paddingLeft="@dimen/fivedp"
+                android:paddingRight="@dimen/fivedp"
+                android:text="@string/lorem_ipsum" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tendp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/startPlanTVBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/chatbtnselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/tendp"
+                    android:paddingLeft="@dimen/twentydp"
+                    android:paddingRight="@dimen/twentydp"
+                    android:paddingTop="@dimen/tendp"
+                    android:text="START THIS PLAN"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.1" />
+            </LinearLayout>
+        </LinearLayout>-->

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3.5 "
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:src="@drawable/mai_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/welcome"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twentyFivesp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4.5"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingRight="@dimen/twentydp">
+
+            <TextView
+                android:id="@+id/mobileNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:gravity="center_horizontal"
+                android:text="@string/mobNumString"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twentysp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftydp"
+                android:background="@drawable/border2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/countryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/twentydp"
+                    android:paddingRight="@dimen/twentydp"
+                    android:gravity="center"
+                    android:text="@string/indCode"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twentysp" />
+
+                <View
+                    android:id="@+id/verticalLine"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical" />
+
+                <EditText
+                    android:id="@+id/mobnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/twentydp"
+                    android:layout_marginRight="@dimen/twentydp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/mobileNo_hint"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twentysp" />
+                <!-- android:textCursorDrawable="@drawable/color_cursor"-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mobnumchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/twentydp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:text="@string/numberchangetext"
+                android:textColor="@color/textblue"
+                android:textSize="@dimen/sixteensp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mobnumVerify"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/buttonyellow"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentysp" />
+
+
+</RelativeLayout>

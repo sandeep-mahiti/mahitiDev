@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_steps_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.90"
+    android:drawableLeft="@drawable/roundtext100"
+    android:drawablePadding="@dimen/tendp"
+    android:text="Call out your Child's name and say 'Hello'."
+    android:textColor="#a7b5c0"
+    android:paddingTop="@dimen/fivedp"
+    android:paddingBottom="@dimen/fivedp"
+    android:textSize="@dimen/twelvesp"
+    android:textStyle="bold" />
+
+
+

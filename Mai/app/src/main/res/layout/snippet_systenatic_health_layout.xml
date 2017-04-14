@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/systematic_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:padding="@dimen/tendp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tendp"
+                android:layout_weight=".5"
+                android:text="@string/cardiovascular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <TextView
+                android:id="@+id/tv_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="@string/normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tendp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tendp"
+                android:layout_weight=".5"
+                android:text="@string/respiratory"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <TextView
+                android:id="@+id/tv_resp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="@string/normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:padding="@dimen/tendp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tendp"
+                android:layout_weight=".5"
+                android:text="@string/abdominal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <TextView
+                android:id="@+id/tv_abdominal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="@string/normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tendp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tendp"
+                android:layout_weight=".5"
+                android:text="@string/Musculoskeletal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <TextView
+                android:id="@+id/tv_musculoskeletal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="@string/normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/systematic_spinners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:padding="@dimen/tendp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tendp"
+                android:layout_weight=".5"
+                android:text="@string/cardiovascular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <Spinner
+                android:id="@+id/sp_cardiov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight=".5"
+                android:entries="@array/needs_attention_array" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tendp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tendp"
+                android:layout_weight=".5"
+                android:text="@string/respiratory"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <Spinner
+                android:id="@+id/sp_resp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight=".5"
+                android:entries="@array/needs_attention_array" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:padding="@dimen/tendp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tendp"
+                android:layout_weight=".5"
+                android:text="@string/abdominal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <Spinner
+                android:id="@+id/sp_abdominal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight=".5"
+                android:entries="@array/needs_attention_array" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tendp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tendp"
+                android:layout_weight=".5"
+                android:text="@string/Musculoskeletal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp" />
+
+            <Spinner
+                android:id="@+id/sp_musculoskeletal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight=".5"
+                android:entries="@array/needs_attention_array" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:orientation="horizontal"
+        android:padding="@dimen/fivedp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/systematic_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/tendp"
+            android:gravity="right"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingTop="@dimen/fivedp"
+            android:paddingBottom="@dimen/fivedp"
+            android:paddingRight="@dimen/twentydp"
+            android:background="@drawable/border_textview"
+            android:text="@string/save_small"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/eighteensp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:padding="@dimen/fivedp"
+            android:text="@string/advanced_analysis"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/eighteensp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

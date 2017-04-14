@@ -1,0 +1,351 @@
+<resources>
+    <string name="app_name">Mai</string>
+
+    <string name="otpSentSubString">It may take a few seconds, but we\'ll get started soon.</string>
+    <string name="dintRcvOtp">Did not receive OTP ? No Problem</string>
+    <string name="resendOTP">RESEND OTP</string>
+    <string name="mobNumString">Please enter your mobile number.</string>
+    <string name="indCode">+91</string>
+    <string name="welcome">Welcome</string>
+    <string name="mobileNo_hint">10 digit mobile number</string>
+    <string name="numberchangetext"><u>My number has changed</u></string>
+    <string name="verify">Verify</string>
+    <string name="newMobNumString">Enter your NEW mobile number</string>
+    <string name="OTP_hint">4 digit OTP here</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="welcome_txt">Identify child development areas through a tailored set of <b>Improvement Areas</b> </string>
+    <string name="analyze_child">Analyze child-specific insights through in-depth and periodic <b>Reports</b></string>
+    <string name="ehnance">Enhance overall development through Improvement Plans backed by experts</string>
+    <string name="whatever">Whatever your parenting need may be, I\'m here to listen and think with you</string>
+
+
+    <string name="lets_begin">Let\'s get started</string>
+    <string name="skip">SKIP</string>
+    <string name="hello">Hello, I am <b>Mai</b> !</string>
+
+    <string name="bringing_science">Together we will work to</string>
+    <string name="to_the_art">To the Art of Parenting!</string>
+
+
+    <string name="first_name_hint">First name</string>
+    <string name="last_name_hint">Last name</string>
+    <string name="email_hint">Email</string>
+    <string name="welcome_amit">Welcome </string>
+    <string name="please_enter_details">Please enter your personal details below</string>
+    <string name="begin">Begin</string>
+
+    <string name="wrongOtpString">Oops! Your OTP seems incorrect.</string>
+    <string name="or">OR</string>
+    <string name="enter_otp_again">Please enter your OTP again.</string>
+
+    <string name="error_email">*Please enter the correct email ID</string>
+    <string name="already_register">you are already registered with the number ending with</string>
+    <string name="select_options">Select one of the following options</string>
+    <string name="register_old_num">Register with old number</string>
+    <string name="continue_existing">Continue with </string>
+    <string name="title_activity_email_otp">EmailOtpActivity</string>
+    <string name="looks_like">Looks like you already have an \naccount</string>
+    <string name="to_continue">To continue, please enter the OTP \n We sent to your email.</string>
+    <!--<string name="sample_email">amit.singh@gmail.com</string>-->
+    <string name="title_activity_security_question">SecurityQuestionActivity</string>
+    <string name="security_qn1"> Security question </string>
+    <string name="what_dob">What is the Date of Birth of your son Mohit?</string>
+    <string name="enter_dob_hint">Your answer here</string>
+    <string name="next">Next</string>
+
+    <string name="your_account">Your account is locked</string>
+
+    <string name="done">Done</string>
+    <string name="title_activity_parent_dashboard">ParentDashboardActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+
+    <string name="geneal">General</string>
+    <string name="additional">Additional</string>
+    <string name="medical">Medical</string>
+    <string name="parent_my_profile">My Profile</string>
+    <string name="child_profile">Child Profile</string>
+    <string name="dob">Date of birth</string>
+    <string name="relation">Relation</string>
+    <string name="save">SAVE</string>
+    <string name="linked_parent">Linked parent</string>
+    <string name="none">NONE</string>
+    <string name="add_parent">ADD A PARENT</string>
+    <string name="type_of_profission">Type of Profession</string>
+    <string name="office_days">Office Days</string>
+    <string name="office_timings">Office Timings</string>
+    <string name="avg_income">Average Income</string>
+    <string name="have_tv">Do you have a TV?</string>
+    <string name="plasma">Plasma</string>
+    <string name="led">LED</string>
+    <string name="others">Others</string>
+    <string name="children_have_separate">Do your children have separate rooms?</string>
+
+    <string-array name="profession_type">
+        <item>Type of profession</item>
+    </string-array>
+    <string-array name="avg_income">
+        <item>Average Income</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+    <string name="title_activity_child_profile">ChildProfileActivity</string>
+    <string name="nick_name_hin">Nick Name</string>
+    <string name="gender">Gender</string>
+
+    <string name="school">School</string>
+    <string name="class_hint">Class</string>
+    <string name="section">Section</string>
+    <string name="male">Boy</string>
+    <string name="female">Girl</string>
+    <string name="roll_number_hint">Roll Number</string>
+    <string name="doctor_name_hint">Doctor Name</string>
+    <string name="doctor_contact_num_hint">Doctor\'s Contact Number</string>
+    <string name="hospital_name_hint">Hospital Name</string>
+    <string name="hospital_address_hint">Hospital Address</string>
+    <string name="likes_hint">Likes</string>
+    <string name="dislikes_hint">Dislikes</string>
+    <string name="hobbies_hint">Hobbies</string>
+    <string name="skills_hint">Skills</string>
+    <string name="allergies_hint">Allergies</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="title_activity_child_dashboard">Child Dashboard</string>
+    <string name="hospital_contact_num_hint">Hospital Contact Number</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="privacy_policy">Privacy Policy &amp; Legal</string>
+    <string name="logout">Log Out</string>
+    <string name="fre_ans_qns">Frequently Asked Questions</string>
+    <string name="about">About</string>
+    <string name="anct">Accounts</string>
+    <string name="office_timings_from"> From</string>
+    <string name="office_timings_to"> To</string>
+    <string name="title_activity_notification">Notification</string>
+
+    <string name="notification">Push Notifications</string>
+    <string name="reminder_notification">Reminder Notifications</string>
+    <string name="on_dismiss">On Dismiss</string>
+    <string name="reminder_after">Remind After</string>
+    <string name="amDone">I am Done</string>
+
+    <string name="please_ans">Before we proceed to your <b><font fgcolor="white">Dashboard</font></b>, \n I\'d like to know little something:.</string>
+    <string name="not_able">Can\'t remember?</string>
+    <string name="change_qn"><u>Try another question.</u></string>
+    <string name="error_qn">Looks like you entered the wrong answer. Please Try again.</string>
+    <string name="title_activity_health_report">Health Report for </string>
+    <string name="title_activity_chart_option">Growth Charts</string>
+    <string-array name="months_array">
+        <item>Months</item>
+        <item>Years</item>
+    </string-array>
+    <string name="title_activity_graph_list">GraphListActivity</string>
+    <string name="graph">Graph</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="list">List</string>
+    <string-array name="remind_array">
+        <item>30 Mints</item>
+        <item>1 Hour</item>
+        <item>2 Hour</item>
+        <item>3 Hour</item>
+        <item>4 Hour</item>
+        <!--<item>Never</item>-->
+    </string-array>
+
+
+    <string name="eye">Eye</string>
+    <string name="condition">Condition</string>
+    <string name="hair">Hair</string>
+    <string name="nail">Nail</string>
+    <string name="nose">Nose</string>
+    <string name="skin">Skin</string>
+    <string name="ear">Ear</string>
+    <string name="pure_tone">Pure tone audiometry</string>
+    <string name="advanced_analysis">Advanced Analysis</string>
+    <string name="normal">Normal</string>
+
+    <string-array name="skin_array">
+        <item>Normal</item>
+        <item>Dry</item>
+        <item>Rashes</item>
+        <item>Contact Dermatitis</item>
+    </string-array>
+
+    <string-array name="nose_array">
+        <item>Normal</item>
+        <item>Polyps</item>
+    </string-array>
+
+    <string-array name="hair_array">
+        <item>Normal</item>
+        <item>Dandruff</item>
+    </string-array>
+
+    <string-array name="nail_array">
+        <item>Normal</item>
+        <item>Vitamin Deficiency</item>
+    </string-array>
+
+    <string-array name="ear_array">
+        <item>Wax</item>
+        <item>Fluid in the middle ear</item>
+    </string-array>
+
+    <string-array name="tone_array">
+        <item>Normal</item>
+        <item>Impaired</item>
+    </string-array>
+
+    <!--Eye condition..-->
+    <string name="left_eye">LEFT EYE</string>
+    <string name="right_eye">RIGHT EYE</string>
+    <string name="visual_activity">Visual Acuity</string>
+    <string name="refraction_index">Refractive Index</string>
+    <string name="color_vision">Color vision</string>
+    <string name="squint">Squint</string>
+    <string name="allergy_infection">Allergy/Infection</string>
+    <string name="dental_checkup">Dental Checkup</string>
+
+    <!--Dental strings...-->
+
+    <string name="stains">Stains</string>
+    <string name="tooth_cavity">Tooth Cavity</string>
+    <string name="gum_bleeding">Gum Bleeding</string>
+    <string name="tartae">Tartar</string>
+    <string name="plaque">Plaque</string>
+    <string name="soft_tissue">Soft Tissue</string>
+    <string name="gum_inflamma">Gum Inflammation</string>
+    <string name="bad_breath">Bad Breath</string>
+
+    <!--Systematic Strings-->
+    <string name="cardiovascular">Cardiovascular System</string>
+    <string name="respiratory">Respiratory System</string>
+    <string name="abdominal">Abdominal System</string>
+    <string name="Musculoskeletal">Musculoskeletal System</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string-array name="needs_attention_array">
+        <item>Normal</item>
+        <item>Needs Attention</item>
+    </string-array>
+
+
+    <!--Physical Strings-->
+    <string name="icterus">Icterus</string>
+    <string name="cyanosis">Cyanosis</string>
+    <string name="clubbing">Clubbing</string>
+    <string name="oedema">Oedema Pedal</string>
+    <string name="sacrat">Sacral</string>
+    <string name="peri_orbital">Peri Orbital</string>
+    <string name="lymphadenopathy">Lymphadenopathy</string>
+    <string name="cervical_anterior">Cervical Anterior</string>
+    <string name="cervical_posterior">Cervical Posterior</string>
+    <string name="axillary">Axillary</string>
+    <string name="occipital">Occipital</string>
+    <string name="fpitrochlear">Epitrochlear</string>
+
+    <string-array name="yes_no_array">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <!--Anaemia screening-->
+    <string name="tongue">Tongue</string>
+    <string name="Sclera">Sclera</string>
+    <string name="lips">Lips</string>
+    <string name="nail_bed">Nail Bed</string>
+    <string name="save_small">Save</string>
+    <string name="title_activity_immunization">ImmunizationActivity</string>
+    <string name="select_your_child">SELECT YOUR CHILD</string>
+    <string name="type_of_reminder">TYPE OF REMINDER</string>
+    <string name="Vaccination">Vaccination</string>
+    <string name="Vaccine">VACCINE</string>
+    <string name="date">DATE</string>
+    <string name="time">TIME</string>
+    <string name="place">PLACE</string>
+    <string name="notification_reminder">NOTIFICATION</string>
+    <string name="child_dashboard">Child Dashboard</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="myChildcando"> <u>My child can already do this</u></string>
+
+
+    <string name="throat">Throat</string>
+    <string-array name="throat_array">
+        <item>Normal</item>
+        <item>Hypertrophied Tonsils</item>
+    </string-array>
+
+    <string name="dashboard_home">Home</string>
+    <string name="dashboard_dp">Discover</string>
+    <string name="dashboard_statistics">Dairy</string>
+    <string name="dashboard_ip">Activity</string>
+    <string name="dashboard_health">Health</string>
+    <string name="reminder">Reminder</string>
+
+    <string name="current">Current</string>
+    <string name="complete">Complete</string>
+
+    <string-array name="ip_tab_names">
+        <item>@string/current</item>
+        <item>@string/complete</item>
+    </string-array>
+
+    <string-array name="tab_names">
+        <item>@string/dashboard_home</item>
+        <item>@string/dashboard_discover</item>
+        <item>@string/dashboard_diary</item>
+        <item>@string/dashboard_activity</item>
+       <!-- <item>@string/dashboard_health</item>-->
+        <item>@string/reminder</item>
+    </string-array>
+
+    <string name="on_snooze">On Snooze</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="qstnsLeft">Questions left</string>
+    <string name="your_personal_parent">Your Intelligent Parenting Companion</string>
+
+    <string name="child_fill_string">Please fill the details below so that I can know your child better</string>
+    <string name="user_fill_string">Please fill the details below so that I can know you better</string>
+    <string name="active_ip">You already have <font fgcolor="blue">3</font> active improvement plans for </string>
+    <string name="like_pause">Would you like to pause one of them, or do this one later?</string>
+    <string name="pause_plan">PAUSE A PLAN</string>
+    <string name="do_this_later">DO THIS LATER</string>
+    <string name="back">Back</string>
+
+    <string name="child_perform">HOW OFTEN DOES YOUR CHILD PERFORM THIS TASK?</string>
+    <string name="always">ALWAYS</string>
+
+    <string name="congratulations">CONGRATULATIONS !</string>
+    <string name="completed_bignner_level">Your child has completed beginner level of this module</string>
+    <string name="move_profecient_level">Lets move to the proficient level now</string>
+
+    <string name="child_take_more_time">Sometimes children take more time to pickup more skills. Don\'t worry.</string>
+    <string name="simplified_version">Here is a simplified version of the activity that you can try and we can come to this later.</string>
+    <string name="learning">LEARNING PLAN</string>
+    <string name="dashboard_discover">DPs</string>
+    <string name="dashboard_diary">Statistics</string>
+    <string name="dashboard_activity">Activity</string>
+    <string name="congrats">Congratulations !</string>
+    <string name="beguntask">You have begun a new task for</string>
+    <string name="ip_curr_active">This Improvement Plan is currently Active</string>
+    <string name="your_ans">I AM SORRY, YOU\'VE EXCEEDED \n THE NUMBER OF ATTEMPTS.</string>
+
+    <string name="otpSentString">Please enter the OTP sent to your registered mobile number.</string>
+    <string name="lets_try_again">Lets\' try again</string>
+    <string name="childmedstr">These details will help me keep a record of your medical care preferences.</string>
+
+    <string name="font_fontFamily_medium">sans-serif-medium</string>
+
+    <string name="please_get">Not to worry - you can reach out to our customer service team anytime at</string>
+
+
+</resources>

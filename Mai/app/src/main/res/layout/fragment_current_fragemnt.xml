@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.activity.ipTabs.CurrentFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tendp"
+        android:text="Paused Plans"
+        android:textSize="@dimen/sixteensp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_currentPlans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_noCurrrentTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No plans are available"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twentysp"
+        android:visibility="gone" />
+
+</RelativeLayout>

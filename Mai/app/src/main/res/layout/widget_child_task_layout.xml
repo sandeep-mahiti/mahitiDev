@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetTaskLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/tendp"
+        android:layout_marginTop="@dimen/tendp"
+        android:visibility="gone"
+        android:id="@+id/leftView"
+        android:layout_weight=".5"
+        android:background="@android:color/holo_blue_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tendp"
+        android:layout_marginTop="@dimen/tendp"
+        android:layout_marginLeft="@dimen/fivedp"
+        android:layout_marginRight="@dimen/fivedp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/task_tab100"
+            android:orientation="vertical"
+            android:padding="@dimen/tendp">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/tendp"
+                android:paddingRight="@dimen/tensp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/task_childImage"
+                    android:layout_width="@dimen/fiftydp"
+                    android:layout_height="@dimen/fiftydp"
+                    android:src="@drawable/child" />
+
+                <TextView
+                    android:id="@+id/taskChildName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/task_childImage"
+                    android:inputType="textCapCharacters"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/thirtydp"
+                    android:text="MOHIT TASK"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twentydp" />
+
+                <ImageView
+                    android:id="@+id/taskWidgetClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:src="@drawable/task_closebutton" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/r2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl1"
+                android:layout_marginTop="@dimen/fivedp"
+                android:orientation="horizontal"
+                android:padding="@dimen/fivedp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/dp_name_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Making friends"
+                    android:textColor="@color/lets_begin_color"
+                    android:textSize="@dimen/sixteensp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/skill_name_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:drawableLeft="@drawable/verbal_communication_yello"
+                    android:drawablePadding="@dimen/fivedp"
+                    android:text="Verbal Communication "
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/sixteensp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/taskQn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r2"
+                android:layout_marginLeft="@dimen/tendp"
+                android:layout_marginRight="@dimen/tendp"
+                android:text="Hello at his friends Was Mohit able to say Hello Today at the garden to at his friends  at his friends Was Mohit able to say Hello Today at the garden to at his friends"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fourteensp" />
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/eighty"
+                android:layout_below="@+id/taskQn"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginRight="@dimen/twentydp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcvDaysList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_widget"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/dayYes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/fiftydp"
+                android:layout_weight=".4"
+                android:src="@drawable/yes_btn" />
+
+            <ImageView
+                android:id="@+id/dayNo"
+                android:layout_width="@dimen/fiftydp"
+                android:layout_height="@dimen/fiftydp"
+                android:layout_weight=".4"
+                android:src="@drawable/closeround" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/tendp"
+        android:layout_marginTop="@dimen/tendp"
+        android:layout_weight=".5"
+        android:visibility="gone"
+        android:id="@+id/rightView"
+        android:background="@android:color/holo_blue_dark" />
+
+</LinearLayout>

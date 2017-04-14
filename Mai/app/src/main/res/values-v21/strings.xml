@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="child_dashboard">Child Dashboard</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="myChildcando"> <u>My child can already do this</u></string>
+    <string name="qstnsLeft">Questions left</string>
+    <string name="learning">LEARNING PLAN</string>
+    <string name="dashboard_discover">Discover</string>
+    <string name="dashboard_diary">Diary</string>
+    <string name="dashboard_activity">Activity</string>
+    <string name="beguntask">You have begun new task for</string>
+    <string name="congrats">Congratulations</string>
+    <string name="lets_try_again">Lets\' try again</string>
+    <string name="childmedstr">These details will help me keep a record of your medical care preferences.</string>
+</resources>

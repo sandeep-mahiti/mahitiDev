@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_white">#f1f1f1</color>
+    <color name="lite_grey">#c8cbcf</color>
+    <color name="day_select">#3471D1</color>
+    <color name="day_deselect">#A9B4C6</color>
+</resources>

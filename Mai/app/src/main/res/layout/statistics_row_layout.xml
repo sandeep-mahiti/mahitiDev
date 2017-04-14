@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/eachCardView"
+    android:layout_marginBottom="@dimen/tendp"
+    android:layout_marginTop="@dimen/tendp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardRL"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/topLayout"
+            android:background="@drawable/kid_image"
+            android:orientation="vertical"
+            android:padding="@dimen/tendp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mohit"
+                android:id="@+id/statstics_childName"
+                android:textColor="@color/begin"
+                android:textSize="@dimen/sixteensp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exam Confidence"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twentysp"
+                android:id="@+id/statistics_topic"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topLayout"
+            android:padding="@dimen/tendp"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_marginBottom="@dimen/tendp"
+                android:id="@+id/statistics_childImage"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:src="@drawable/profile_photo"/>
+            <!-- design 3 progress bars as shown in PSD-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.02"/>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:progressDrawable="@drawable/days_progress"
+                        android:layout_width="0dp"
+                        android:indeterminateOnly="false"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:max="100"
+                        android:progress="60"
+                        android:id="@+id/days_progressbar"                       />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.02"/>
+                   <!-- <ProgressBar
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:theme="@style/LinearProgress"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:indeterminate="true"
+                        android:layout_weight="0.7"
+                        android:id="@+id/days_progressbar"
+                        android:visibility="visible" />-->
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.14"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/first_bar_fg_color"
+                        android:id="@+id/days_percentageTV"
+                        android:text="60%"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.02"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center"
+                        android:textColor="@color/first_bar_fg_color"
+                        android:id="@+id/days_TV"
+                        android:text="Days"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@+id/days_questionIm"
+                        android:src="@drawable/green_question"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="0.02"/>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:progressDrawable="@drawable/achieved_progress"
+                        android:layout_width="0dp"
+                        android:indeterminateOnly="false"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:max="100"
+                        android:progress="48"
+                        android:id="@+id/achieved_progressbar"                       />
+
+                    <!-- <ProgressBar
+                         style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                         android:theme="@style/LinearProgress"
+                         android:layout_width="0dp"
+                         android:layout_height="25dp"
+                         android:indeterminate="true"
+                         android:layout_weight="0.7"
+                         android:id="@+id/days_progressbar"
+                         android:visibility="visible" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="0.02"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.14"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/achieved_pbar_color"
+                        android:id="@+id/achieved_percentageTV"
+                        android:text="48%"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="0.02"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center"
+                        android:textColor="@color/achieved_pbar_color"
+                        android:id="@+id/achieved_TV"
+                        android:text="Achieved"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@+id/achieved_questionIm"
+                        android:src="@drawable/orenge_question"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="0.02"/>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:progressDrawable="@drawable/questions_progress"
+                        android:layout_width="0dp"
+                        android:indeterminateOnly="false"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:max="100"
+                        android:progress="70"
+                        android:id="@+id/questions_progressbar"                       />
+
+                    <!-- <ProgressBar
+                         style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                         android:theme="@style/LinearProgress"
+                         android:layout_width="0dp"
+                         android:layout_height="25dp"
+                         android:indeterminate="true"
+                         android:layout_weight="0.7"
+                         android:id="@+id/days_progressbar"
+                         android:visibility="visible" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="0.02"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.14"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/questions_pbar_color"
+                        android:id="@+id/questions_percentageTV"
+                        android:text="70%"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="0.02"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:layout_margin="0dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/questions_pbar_color"
+                        android:id="@+id/questions_TV"
+                        android:text="Question"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@+id/questions_questionIm"
+                        android:src="@drawable/blue_question"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:orientation="horizontal"
+        android:padding="@dimen/tendp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/thirtydp"
+            android:layout_weight=".5"
+            android:text="@string/dental_checkup"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twentysp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dental_checkboxs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/d_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_weight=".5"
+                android:text="@string/normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/d_tooth_cavity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="@string/tooth_cavity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/d_satins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_weight=".5"
+                android:text="@string/stains"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+
+            <!-- -->
+
+            <CheckBox
+                android:id="@+id/d_gum_bleeding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="@string/gum_bleeding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/d_tartae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_weight=".5"
+                android:text="@string/tartae"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/d_soft_tissue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:text="@string/soft_tissue"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/d_plaque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_weight=".5"
+                android:text="@string/plaque"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+
+
+            <CheckBox
+                android:id="@+id/d_bad_breath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:text="@string/bad_breath"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/d_gum_inflamma"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_weight=".8"
+                android:text="@string/gum_inflamma"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dental_checked_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/thirtydp"
+        android:paddingTop="@dimen/fivedp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/fivedp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/dental_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_textview"
+            android:paddingBottom="@dimen/fivedp"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingRight="@dimen/twentydp"
+            android:paddingTop="@dimen/fivedp"
+            android:text="@string/save_small"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/eighteensp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:padding="@dimen/fivedp"
+            android:text="@string/advanced_analysis"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/eighteensp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

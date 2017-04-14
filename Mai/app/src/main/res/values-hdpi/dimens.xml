@@ -1,0 +1,50 @@
+<resources>
+
+    <dimen name="twentysp">16sp</dimen>
+
+
+    <dimen name="fourtysp">38sp</dimen>
+    <dimen name="fourteensp">12sp</dimen>
+    <dimen name="eighteensp">16sp</dimen>
+    <dimen name="twosp">2sp</dimen>
+    <dimen name="twelveSp">10sp</dimen>
+    <dimen name="twentyFivesp">23sp</dimen>
+    <dimen name="thirtysp">28sp</dimen>
+    <dimen name="twelvesp">10sp</dimen>
+    <dimen name="tensp">8sp</dimen>
+    <dimen name="eightsp">6sp</dimen>
+    <dimen name="twentytwosp">20sp</dimen>
+    <dimen name="eightensp">16sp</dimen>
+    <dimen name="sixteensp">14sp</dimen>
+
+    <dimen name="activity_horizontal_margin">14dp</dimen>
+    <dimen name="activity_vertical_margin">14dp</dimen>
+    <dimen name="twentydp">18dp</dimen>
+    <dimen name="fourtydp">38dp</dimen>
+    <dimen name="fiftydp">48dp</dimen>
+    <dimen name="tendp">8dp</dimen>
+    <dimen name="twodp">2dp</dimen>
+    <dimen name="twentyFivedp">23dp</dimen>
+    <dimen name="fivedp">3dp</dimen>
+    <dimen name="thirtydp">28dp</dimen>
+    <dimen name="fab_margin">14dp</dimen>
+    <dimen name="thirtyifivedp">33dp</dimen>
+    <dimen name="twelve">10dp</dimen>
+    <dimen name="hunderd">98dp</dimen>
+    <dimen name="eighty">78dp</dimen>
+    <dimen name="seventy">68dp</dimen>
+    <dimen name="thirteendp">12dp</dimen>
+    <dimen name="eightdp">7dp</dimen>
+    <dimen name="appbar_padding_top">7dp</dimen>
+    <dimen name="twentyfivedp">23dp</dimen>
+    <dimen name="fifteendp">13dp</dimen>
+    <dimen name="fourdp">3dp</dimen>
+    <dimen name="sixty">58dp</dimen>
+    <dimen name="nav_header_height">158dp</dimen>
+    <dimen name="threedp">3dp</dimen>
+    <dimen name="sevendp">6dp</dimen>
+    <dimen name="twentytwodp">20dp</dimen>
+
+    <dimen name="dpwidth">223px</dimen>
+    <dimen name="dpheight">150px</dimen>
+</resources>

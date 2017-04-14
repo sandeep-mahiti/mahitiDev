@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="@dimen/fivedp"
+    android:paddingBottom="@dimen/fivedp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:id="@+id/mai_chat_icon"
+            android:visibility="invisible"
+            android:src="@drawable/mai_profile" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/twentydp"
+            android:paddingBottom="@dimen/tendp"
+            android:id="@+id/mai_chatTv"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingRight="@dimen/tendp"
+            android:layout_weight="0.80"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel urna nec ante bibendum mattis."
+            android:background="@drawable/landingpage_message_bg" >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/fivedp"
+
+        android:layout_marginBottom="@dimen/fivedp"
+        android:layoutDirection="rtl"
+        android:weightSum="1">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:id="@+id/user_chat_icon"
+            android:src="@drawable/user_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/fivedp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/fivedp"
+            android:paddingBottom="@dimen/fivedp"
+            android:visibility="invisible"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingRight="@dimen/twentydp"
+            android:layout_marginBottom="@dimen/fivedp"
+            android:layout_weight="0.4"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:id="@+id/user_chatTv"
+            android:layout_gravity="center"
+            android:text="Yes"
+            android:background="@drawable/chatbtnselected" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

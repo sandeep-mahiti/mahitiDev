@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/tendp">
+
+    <TextView
+        android:id="@+id/history_questionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fivedp"
+        android:paddingLeft="@dimen/tendp"
+        android:paddingRight="@dimen/tendp"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eightensp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tendp"
+        android:layout_marginRight="@dimen/tendp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/history_yesnoTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="@dimen/fivedp"
+            android:layout_margin="@dimen/twodp"
+            android:background="@drawable/chatbtnselected"
+            android:gravity="center"
+            android:text="CAN'T SAY"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:id="@+id/history_changeTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:clickable="true"
+            android:padding="@dimen/tendp"
+            android:text="CHANGE"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/yesno_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/fivedp"
+            android:paddingTop="@dimen/fivedp"
+            android:weightSum="3.7">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:padding="@dimen/fivedp">
+
+                <TextView
+                    android:id="@+id/yesTextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/begin_border"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/fivedp"
+                    android:paddingTop="@dimen/fivedp"
+                    android:text="Yes"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteensp" />
+
+                <TextView
+                    android:id="@+id/yesDotTv"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:background="@drawable/chatbtnselected"
+                    android:gravity="center_horizontal"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.1"
+                android:orientation="vertical"
+                android:padding="@dimen/fivedp">
+
+                <TextView
+                    android:id="@+id/noTextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/begin_border"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/fivedp"
+                    android:paddingTop="@dimen/fivedp"
+                    android:text="No"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteensp" />
+
+                <TextView
+                    android:id="@+id/noDotTv"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:background="@drawable/chatbtnselected"
+                    android:gravity="center_horizontal"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.1"
+                android:orientation="vertical"
+                android:padding="@dimen/fivedp">
+
+                <TextView
+                    android:id="@+id/skipTextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/chatbtnselected"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/fivedp"
+                    android:paddingTop="@dimen/fivedp"
+                    android:text="Skip"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteensp" />
+
+                <TextView
+                    android:id="@+id/skipDotTv"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:background="@drawable/chatbtnselected"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hisBbottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/very_light_grey"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/tendp"
+            android:paddingTop="@dimen/tendp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2" />
+
+            <TextView
+
+                android:id="@+id/hisNotApplicableTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/chatbtnselected"
+                android:gravity="center_vertical"
+                android:padding="@dimen/fivedp"
+
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="Not applicable"
+                android:textSize="@dimen/fourteensp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2" />
+
+            <TextView
+
+                android:id="@+id/hisNeedToObsrvTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/begin_border"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:padding="@dimen/fivedp"
+                android:text="Need to observe"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteensp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="@dimen/tendp"
+        android:layout_marginTop="@dimen/tendp"
+        android:background="@color/very_light_grey" />
+
+</LinearLayout>

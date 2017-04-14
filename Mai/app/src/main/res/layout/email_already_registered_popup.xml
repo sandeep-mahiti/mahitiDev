@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_corners"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/twentysp"
+    android:paddingLeft="@dimen/twentyFivedp"
+    android:paddingRight="@dimen/twentyFivedp"
+    android:paddingTop="@dimen/twentydp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mai_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twentyFivedp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:id="@+id/welcomeNameTV"
+        android:text="@string/welcome_amit"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:textAlignment="center"
+        android:text="@string/already_register"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/eighteensp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twentyFivedp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:text="*******789"
+        android:id="@+id/mobile_numTV"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twentysp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:text="@string/select_options"
+        android:textColor="#666666"
+        android:textSize="@dimen/twentysp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:id="@+id/oldNumberTV"
+        android:clickable="true"
+        android:text="@string/register_old_num"
+        android:textColor="@color/register_color"
+        android:textSize="@dimen/twentydp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentydp"
+        android:id="@+id/continueTV"
+        android:clickable="true"
+        android:text="@string/continue_existing"
+        android:textColor="@color/register_color"
+        android:textSize="@dimen/twentydp" />
+</LinearLayout>

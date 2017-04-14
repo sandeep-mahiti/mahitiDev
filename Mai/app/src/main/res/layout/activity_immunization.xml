@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.parentof.mai.views.activity.immuniazation.ImmunizationActivity">
+
+    <include layout="@layout/mai_toolbar" />
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/health_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="@dimen/eighty"
+            android:layout_height="@dimen/eighty"
+            android:src="@drawable/child"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            android:id="@+id/imgImmunization" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginTop="@dimen/fivedp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_immunization"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--</LinearLayout>
+    </ScrollView>-->
+</LinearLayout>

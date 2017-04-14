@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ToolbarStyle"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <LinearLayout
+        android:id="@+id/rr_childName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <com.parentof.mai.utils.RoundedImageView
+            android:id="@+id/childImage"
+            android:layout_width="@dimen/fiftydp"
+            android:layout_height="@dimen/fiftydp"
+            android:src="@drawable/child" />
+
+        <TextView
+            android:id="@+id/childName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/tendp"
+            android:text="Mohit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteensp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/parentIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/tendp"
+        android:src="@drawable/dummyprofileimg"
+        android:visibility="gone" />
+
+</android.support.v7.widget.Toolbar>
+
+

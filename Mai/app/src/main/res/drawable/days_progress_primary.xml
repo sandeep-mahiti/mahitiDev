@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+
+            <shape>
+                <corners android:radius="10dp" />
+
+                <gradient
+                    android:startColor="@color/days_pbar_startcolor"
+                    android:endColor="@color/first_bar_fg_color"
+                    />
+            </shape>
+
+    </item>
+
+</layer-list>

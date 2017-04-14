@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/twentydp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tendp"
+        android:background="@color/pop_top_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/tendp">
+
+        <ImageView
+            android:layout_width="@dimen/fiftydp"
+            android:layout_height="@dimen/thirtydp"
+            android:src="@drawable/injection" />
+
+        <TextView
+            android:id="@+id/pp_vaccine_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tendp"
+            android:text="Label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteensp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/twentydp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sixteensp"
+                android:text="Date :" />
+
+            <EditText
+                android:id="@+id/edt_vaccineDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/calendar_normal"
+                android:editable="false"
+                android:padding="@dimen/fivedp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/twentydp"
+            android:layout_marginLeft="@dimen/fiftydp"
+            android:background="@color/colorPrimary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/vacchine_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:paddingTop="@dimen/tendp"
+                android:text="DONE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/eighteensp" />
+
+            <TextView
+                android:id="@+id/vacchine_dismiss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:paddingTop="@dimen/tendp"
+                android:text="DISMISS"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

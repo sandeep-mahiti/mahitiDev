@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_anaemia_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/a_skin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/twentyFivedp"
+                android:layout_weight=".5"
+                android:text="@string/skin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/a_tongue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/fivedp"
+                android:layout_weight=".5"
+                android:text="@string/tongue"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/light_blue"
+            android:padding="@dimen/fivedp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/a_sclera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/twentyFivedp"
+                android:layout_weight=".5"
+                android:text="@string/Sclera"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/a_lips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/fivedp"
+                android:layout_weight=".5"
+                android:text="@string/lips"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/a_nailBed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/twentyFivedp"
+                android:layout_weight=".5"
+                android:text="@string/nail_bed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_anaemia_checked_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/fivedp"
+        android:paddingLeft="@dimen/thirtydp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fivedp"
+        android:orientation="horizontal"
+        android:padding="@dimen/fivedp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/anaemia_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/tendp"
+            android:paddingLeft="@dimen/twentydp"
+            android:paddingTop="@dimen/fivedp"
+            android:paddingBottom="@dimen/fivedp"
+            android:paddingRight="@dimen/twentydp"
+            android:background="@drawable/border_textview"
+            android:text="@string/save_small"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/eighteensp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:padding="@dimen/fivedp"
+            android:text="@string/advanced_analysis"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/eighteensp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

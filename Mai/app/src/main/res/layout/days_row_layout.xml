@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_days"
+            android:layout_width="@dimen/fourtydp"
+            android:layout_height="@dimen/fourtydp"
+            android:background="@drawable/roundgray100"
+            android:gravity="center"
+            android:text="Day 1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tensp" />
+
+        <View
+            android:id="@+id/rightView"
+            android:layout_width="@dimen/thirteendp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="@color/day_select" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/fivedp"
+        android:src="@drawable/rounddaylock100" />
+
+    <ImageView
+        android:id="@+id/img_yes"
+        android:layout_width="@dimen/thirtydp"
+        android:layout_height="@dimen/twentydp"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/fivedp"
+        android:visibility="gone"
+        android:src="@drawable/righticon_immunization" />
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="@dimen/thirtydp"
+        android:layout_height="@dimen/twentydp"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/fivedp"
+        android:visibility="gone"
+        android:src="@drawable/bar_arrow"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03aded</color>
+    <color name="colorPrimaryDark">#0698eb</color>
+    <color name="colorAccent">#03aded</color>
+
+    <!--Developer defined colors for this app-->
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="yellow">#e8ca23</color>
+    <color name="textblue">#29aaf5</color>
+    <color name="buttonyellow">#dfc844</color>
+    <color name="red">#b53d3f</color>
+    <color name="error_email">#f8a8a8</color>
+    <color name="email_text_error">#f61111</color>
+
+    <color name="register_color">#e8ca23</color>
+    <color name="bg_color">#3f92db</color>
+    <color name="lets_begin_color">#efaa44</color>
+
+    <color name="gray">#666666</color>
+    <color name="security_qn_color">#b1b0af</color>
+    <color name="error_dob">#C14B4B</color>
+    <color name="next_color">#B5AE18</color>
+   <!-- <color name="begin">#B5AE18</color>-->
+
+    <color name="hint_color">#c2ddf8</color>
+    <color name="hint_color_dark">#a4ccf5</color>
+
+    <color name="light_gray">#e8e7e6</color>
+    <color name="pop_top_color">#e2e2e3</color>
+
+    <color name="tab_color">#62adf1</color>
+    <color name="layout_bg">#f3f8fc</color>
+    <color name="light_blue">#d3e5fb</color>
+    <color name="light_red">#d23951</color>
+    <color name="edt_bg">#e8e7e5</color>
+    <color name="orange">#FFAE19</color>
+
+
+
+    <color name="green">#5e9b4c</color>
+    <color name="grey">#f6636161</color>
+    <color name="text_grey">#8c8a8a</color>
+    <color name="light_grey">#F6B6B2B2</color>
+    <color name="begin">#dfc844</color>
+    <color name="very_light_grey">#dbdbdb</color>
+    <color name="first_bar_fg_color">#209280</color>
+    <color name="achieved_pbar_color">#eb903c</color>
+    <color name="questions_pbar_color">#4538d3</color>
+
+
+    <color name="days_pbar_startcolor">#63dac8</color>
+    <color name="achieved_pbar_startcolor">#f5ad64</color>
+    <color name="achieved_pbar_endcolor">#e58028</color>
+    <color name="questions_pbar_startcolor">#7e72fe</color>
+    <color name="questions_pbar_endcolor">#3c2ecb</color>
+    <color name="mai_yellow">#e0c939</color>
+
+    <color name="tab_text_color">#b4e1ec</color>
+    <color name="custom_blue">#398f8e</color>
+    <color name="dark_green">#3e7e5e</color>
+    <color name="light_white">#f1f1f1</color>
+    <color name="lite_grey">#c8cbcf</color>
+    <color name="day_select">#3471D1</color>
+    <color name="day_deselect">#A9B4C6</color>
+</resources>

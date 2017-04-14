@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/childMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.parentof.mai.views.activity.userProfile.UserProfileActivity"
+    >
+    <include layout="@layout/mai_toolbar"/>
+    <!--<com.parentof.mai_sprint4.utils.CollapsingImageLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/lyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/profile_page_bg"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+               <!-- <com.parentof.mai.utils.CollapsingImageLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+                <LinearLayout
+                    android:id="@+id/childProf_TopLLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="vertical">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/childProfileImage"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="2dp"
+                            android:src="@drawable/boy_1" />
+
+                        <ImageView
+                            android:id="@+id/imageChildEdit"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:clickable="true"
+                            android:src="@drawable/camera"
+                            android:paddingBottom="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_alignBottom="@+id/childProfileImage"
+                            android:layout_alignRight="@+id/childProfileImage"
+                            android:layout_alignEnd="@+id/childProfileImage" />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight=".7"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/thirtyifivedp"
+                        android:orientation="horizontal"
+                        android:weightSum="1.5">
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_child_general"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:background="@color/colorPrimaryDark"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:tag="1">
+
+                            <ImageView
+                                android:id="@+id/img_general"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/general_selected" />
+
+                            <TextView
+                                android:id="@+id/tv_general"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/tendp"
+                                android:text="@string/geneal" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view_general"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_child_medical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:tag="1">
+
+                            <ImageView
+                                android:id="@+id/img_child_medical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/medical_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_child_medical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/tendp"
+                                android:text="@string/medical"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view_additional"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_child_additional"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:tag="1">
+
+                            <ImageView
+                                android:id="@+id/img_additional"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/additional_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_additional"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/tendp"
+                                android:text="@string/additional"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryDark" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/tendp"
+                        android:textColor="#656565"
+                        android:id="@+id/detailsTV"
+                        android:text="@string/child_fill_string"/>
+
+                    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/fragment_child_container"
+                        android:layout_width="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+</LinearLayout>
+<!--    </com.parentof.mai_sprint4.utils.CollapsingImageLayout>-->
+<!--</android.support.design.widget.CoordinatorLayout>-->

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_bg"
+    android:orientation="vertical"
+    tools:context="com.parentof.mai.views.activity.growthCharts.GraphListActivity">
+
+    <include layout="@layout/mai_toolbar" />
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_graph_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_graph"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/listbottom" />-->
+    <LinearLayout
+        android:id="@+id/rl_graph_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pop_top_color"
+            android:orientation="vertical"
+            android:padding="@dimen/tendp">
+
+            <TextView
+                android:id="@+id/heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/graph"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/twentysp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/listbottom" />
+    </LinearLayout>
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/ll_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tendp"
+        android:layout_marginRight="@dimen/tendp"
+        android:layout_marginTop="@dimen/fiftydp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:text="@string/age"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/child_slected_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:text="@string/height"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/eighteensp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_child_age_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twentydp" />
+
+        <TextView
+            android:id="@+id/save_child_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/tendp"
+            android:padding="@dimen/twentydp"
+            android:text="@string/add"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/eighteensp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_child_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.parentof.mai.utils.CircularImageView
+            android:id="@+id/img_Childgraph"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/dummyprofileimg" />
+
+        <TextView
+            android:id="@+id/tv_GraphChildName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/tendp"
+            android:gravity="center_vertical"
+            android:text="Mohit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteensp" />
+    </LinearLayout>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:layout_marginTop="@dimen/twentydp"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/thirtydp"
+        android:visibility="gone"
+        app:seriesColor="#ee0000"
+        app:seriesType="line" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_list_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/listtop" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pop_top_color"
+                android:padding="@dimen/tendp"
+                android:text="@string/list"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/twentysp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.parentof.mai.views.activity.healthReport.HealthReportActivity">
+    <include layout="@layout/mai_toolbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_sprint_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/health_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/twentydp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/hp_childName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mohit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eighteensp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tendp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/blood_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Group"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/thirtydp" />
+
+                    <TextView
+                        android:id="@+id/hrp_childBloodGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="AB +"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/thirtyifivedp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:text="PARAMETERS"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/eighteensp" />
+
+            <LinearLayout
+                android:id="@+id/ll_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/thirteendp"
+                android:paddingTop="@dimen/thirteendp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/bio" />
+
+                <TextView
+                    android:id="@+id/tv_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="BIOMETRICS"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+
+                <ImageView
+                    android:id="@+id/img_bio_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:src="@drawable/tab_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bio_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/snippet_biometric_layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/thirteendp"
+                android:paddingTop="@dimen/thirteendp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_condition_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/condition" />
+
+                <TextView
+                    android:id="@+id/tv_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="CONDITION"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+
+                <ImageView
+                    android:id="@+id/img_con_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:src="@drawable/tab_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/condition_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/snippet_health_condition_layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_eye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/thirteendp"
+                android:paddingTop="@dimen/thirteendp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_eye"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/eye" />
+
+                <TextView
+                    android:id="@+id/tv_eye"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="EYE"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+
+                <ImageView
+                    android:id="@+id/img_eye_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:src="@drawable/tab_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eye_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/snippet_eye_health_layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_dental"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/thirteendp"
+                android:paddingTop="@dimen/thirteendp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_dental"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/dental" />
+
+                <TextView
+                    android:id="@+id/tv_dental"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="DENTAL"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+
+                <ImageView
+                    android:id="@+id/img_dental_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:src="@drawable/tab_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dental_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/snippet_dental_health_layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_physical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/thirteendp"
+                android:paddingTop="@dimen/thirteendp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_physical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/physical" />
+
+                <TextView
+                    android:id="@+id/tv_physical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="PHYSICAL EXAMINATION"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+
+                <ImageView
+                    android:id="@+id/img_physical_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:src="@drawable/tab_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/physical_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/snippet_physical_health_layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_systematic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/thirteendp"
+                android:paddingTop="@dimen/thirteendp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_sys"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/systematic" />
+
+                <TextView
+                    android:id="@+id/tv_systematic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="SYSTEMATIC EXAMINATION"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+
+                <ImageView
+                    android:id="@+id/img_sys_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:src="@drawable/tab_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/systematic_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/snippet_systenatic_health_layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_anaemia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/thirteendp"
+                android:paddingTop="@dimen/thirteendp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_anaemia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/anaemia" />
+
+                <TextView
+                    android:id="@+id/tv_anaemia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="ANAEMIA SCREENING"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+
+                <ImageView
+                    android:id="@+id/img_anaemia_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:src="@drawable/tab_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/anaemia_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/snippet_anaemia_health_layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/thirteendp"
+                android:paddingTop="@dimen/thirteendp"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/summary" />
+
+                <TextView
+                    android:id="@+id/tv_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="SUMMARY"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_summary_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:src="@drawable/tab_arrow" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/summary_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/snippet_summary_health_layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:visibility="gone"
+                android:background="@color/light_gray" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/mai_toolbar" />
+
+</LinearLayout>
